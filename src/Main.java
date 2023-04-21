@@ -6,7 +6,6 @@ import Hogwarts.Hogwarts;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 //        hermioneGranger and ronWeasley are in Gryffindor House. Гриффиндор.
 //
 // dracoMalfoy, grahamMontague, gregoryGoyle учатся на Слизерине.
@@ -18,20 +17,20 @@ public class Main {
         int randomValue =(int) (Math.random()*100 + 1);
 
         Gryffindor harryPotter = new Gryffindor("Harry", "Potter", randomValue, randomValue);
-        Hogwarts hermioneGranger = new Gryffindor("Hermione", "Granger", randomValue, randomValue);
+        Gryffindor hermioneGranger = new Gryffindor("Hermione", "Granger", randomValue, randomValue);
         Gryffindor ronWeasley = new Gryffindor("Ron", "Weasley", randomValue, randomValue);
 
-        Hogwarts dracoMalfoy = new Slytherin("Draco", "Malfoy", randomValue, randomValue);
-        Hogwarts grahamMontague = new Slytherin("Gragam", "Montague", randomValue, randomValue);
-        Hogwarts gregoryGoyle = new Slytherin("Gregory", "Goyle", randomValue, randomValue);
+        Slytherin dracoMalfoy = new Slytherin("Draco", "Malfoy", randomValue, randomValue);
+        Slytherin grahamMontague = new Slytherin("Gragam", "Montague", randomValue, randomValue);
+        Slytherin gregoryGoyle = new Slytherin("Gregory", "Goyle", randomValue, randomValue);
 
-        Hogwarts zachariasSmith = new Hufflepuff("Zacharia", "Smith", randomValue, randomValue);
-        Hogwarts cedricDiggory = new Hufflepuff("Cedric", "Diggory", randomValue, randomValue);
-        Hogwarts justinFinchFletchley = new Hufflepuff("Justin", "Finch-Fletchley", randomValue, randomValue);
+        Hufflepuff zachariasSmith = new Hufflepuff("Zacharia", "Smith", randomValue, randomValue);
+        Hufflepuff cedricDiggory = new Hufflepuff("Cedric", "Diggory", randomValue, randomValue);
+        Hufflepuff justinFinchFletchley = new Hufflepuff("Justin", "Finch-Fletchley", randomValue, randomValue);
 
-        Hogwarts zhouChang = new Ravenclaw("Zhou", "Chang", randomValue, randomValue);
-        Hogwarts padmaPatil = new Ravenclaw("Padma", "Patil", randomValue, randomValue);
-        Hogwarts marcusBelby = new Ravenclaw("Marcus", "Belby", randomValue, randomValue);
+        Ravenclaw zhouChang = new Ravenclaw("Zhou", "Chang", randomValue, randomValue);
+        Ravenclaw padmaPatil = new Ravenclaw("Padma", "Patil", randomValue, randomValue);
+        Ravenclaw marcusBelby = new Ravenclaw("Marcus", "Belby", randomValue, randomValue);
 
 //        harryPotter.showCharacters();
 //        dracoMalfoy.showCharacters();
@@ -39,6 +38,12 @@ public class Main {
 //        zhouChang.showCharacters();
 
         harryPotter.whoIsBetterGrif(ronWeasley);
+        dracoMalfoy.whoIsBetterSlyth(grahamMontague);
+        zachariasSmith.whoIsBetterHuff(cedricDiggory);
+        zhouChang.whoIsBetterRaven(padmaPatil);
+
+        hermioneGranger.whoIsStrongerWitch(harryPotter);
+        zachariasSmith.whoTravelBetter(harryPotter);
 
 
 

@@ -46,6 +46,20 @@ public class Hogwarts {
     public void showCharacters(){
         System.out.println(this.name + " " + this.surname + " Witchcraft power - " + this.witchcraftPoints + " Transgression distance - " + this.transgressionDistance);
     }
+    public void whoIsStrongerWitch(Hogwarts person2){
+        if ((this.witchcraftPoints) > (person2.witchcraftPoints)) {
+            System.out.println(this.getName() + " " + this.getSurname() + " is stronger wizard than " + person2.getName());
+        } else {
+            System.out.println(person2.getName() + " " + person2.getSurname() + " is stronger wizard than " + this.getName());
+        }
+    }
+    public void whoTravelBetter(Hogwarts person2){
+        if ((this.transgressionDistance) > (person2.transgressionDistance)) {
+            System.out.println(this.getName() + " " + this.getSurname() + " transgress further than " + person2.getName());
+        } else {
+            System.out.println(person2.getName() + " " + person2.getSurname() + " transgress further than " + this.getName());
+        }
+    }
 
 //    Студентам каждого из этих факультетов присущи свои свойства характера. Эти свойства оцениваются в целочисленном эквиваленте от 0 до 100. +++
 //

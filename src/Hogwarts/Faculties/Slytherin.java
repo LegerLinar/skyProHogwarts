@@ -33,4 +33,12 @@ public class Slytherin extends Hogwarts {
         super.showCharacters();
         System.out.println("Cunning - " + cunning + "\n Determination - " + determination + "\n Ambition - " + ambition + "\n Resourcefulness - " + resourcefulness + "\n Authority - " + authority);
     }
+
+    public void whoIsBetterSlyth(Slytherin person2){
+        if ((this.cunning + this.determination + this.ambition + this.resourcefulness + this.authority) > (person2.cunning + person2.determination + person2.ambition + person2.resourcefulness + person2.authority)) {
+            System.out.println(this.getName() + " " + this.getSurname() + " is better Slytheriner than  " + person2.getName());
+        } else {
+            System.out.println(person2.getName() + " " + person2.getSurname() + " is better Slytheriner than  " + this.getName());
+        }
+    }
 }

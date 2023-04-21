@@ -32,4 +32,12 @@ public class Ravenclaw extends Hogwarts {
         super.showCharacters();
         System.out.println(" Smart - " + smart + "\n Wise - " + wise + "\n Witty - " + witty + "\n Creative - " + creative);
     }
+
+    public void whoIsBetterRaven(Ravenclaw person2){
+        if ((this.smart + this.wise + this.witty + this.creative) > (person2.smart + person2.wise + person2.witty + person2.creative)) {
+            System.out.println(this.getName() + " " + this.getSurname() + " is better Ravenclawer than " + person2.getName());
+        } else {
+            System.out.println(person2.getName() + " " + person2.getSurname() + " is better Ravenclawer than " + this.getName());
+        }
+    }
 }

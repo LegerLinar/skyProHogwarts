@@ -29,4 +29,12 @@ public class Hufflepuff extends Hogwarts {
         super.showCharacters();
         System.out.println(" Hardworking - " + hardworking + "\n Loyal - " + loyal + " \n Honest - " + honest);
     }
+
+    public void whoIsBetterHuff(Hufflepuff person2){
+        if ((this.hardworking + this.loyal + this.honest) > (person2.hardworking + person2.loyal + person2.honest)) {
+            System.out.println(this.getName() + " " + this.getSurname() + " is better Hufflepuffer than " + person2.getName());
+        } else {
+            System.out.println(person2.getName() + " " + person2.getSurname() + " is better Hufflepuffer than " + this.getName());
+        }
+    }
 }
