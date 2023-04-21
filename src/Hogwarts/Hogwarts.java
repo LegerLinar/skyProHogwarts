@@ -3,15 +3,16 @@ package Hogwarts;
 public class Hogwarts {
     private String name;
     private String surname;
-    private byte witchcraftPoints;
-    private byte transgressionDistance;
+    private int witchcraftPoints;
+    private int transgressionDistance;
 
-    public Hogwarts(String name, String surname, byte witchcraftPoints, byte transgressionDistance) {
+    public Hogwarts(String name, String surname, int witchcraftPoints, int transgressionDistance) {
         this.name = name;
         this.surname = surname;
         this.witchcraftPoints = witchcraftPoints;
         this.transgressionDistance = transgressionDistance;
     }
+
     public String getName() {
         return name;
     }
@@ -20,11 +21,11 @@ public class Hogwarts {
         return surname;
     }
 
-    public byte getWitchcraftPoints() {
+    public int getWitchcraftPoints() {
         return witchcraftPoints;
     }
 
-    public byte getTransgressionDistance() {
+    public int getTransgressionDistance() {
         return transgressionDistance;
     }
 
@@ -34,6 +35,16 @@ public class Hogwarts {
 
     public void setTransgressionDistance(byte transgressionDistance) {
         this.transgressionDistance = transgressionDistance;
+    }
+
+
+//    Сделайте метод, который выводит на экран описание студента.
+//    В описание надо включать качества, которые присущи всем студентам,
+//    плюс качества, которые присущи студенту, потому что он учится на конкретном факультете.
+
+
+    public void showCharacters(){
+        System.out.println(this.name + " " + this.surname + " Witchcraft power - " + this.witchcraftPoints + " Transgression distance - " + this.transgressionDistance);
     }
 
 //    Студентам каждого из этих факультетов присущи свои свойства характера. Эти свойства оцениваются в целочисленном эквиваленте от 0 до 100. +++
