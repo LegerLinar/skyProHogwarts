@@ -1,43 +1,41 @@
-public class Hogwarts {
-    private byte characterPoints;
-    private byte witchcraftPoints;
+package Hogwarts;
 
+public class Hogwarts {
+    private String name;
+    private String surname;
+    private String facultyName;
+    private byte witchcraftPoints;
     private byte transgressionDistance;
 
-    Hogwarts(byte characterPoints, byte witchcraftPoints, byte transgressionDistance) {
-
-        if(characterPoints <= 100 && characterPoints >= 0) {
-            this.characterPoints = characterPoints;
-        } else {
-            this.characterPoints = 0;
-        }
+    public Hogwarts(String name, String surname, String facultyName, byte witchcraftPoints, byte transgressionDistance) {
+        this.name = name;
+        this.surname = surname;
+        this.facultyName = facultyName;
         this.witchcraftPoints = witchcraftPoints;
         this.transgressionDistance = transgressionDistance;
     }
-
-    public byte getCharacterPoints() {
-        return characterPoints;
+    public String getName() {
+        return name;
     }
 
-    public void setCharacterPoints(byte characterPoints) {
-        this.characterPoints = characterPoints;
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getFacultyName() {
+        return facultyName;
     }
 
     public byte getWitchcraftPoints() {
         return witchcraftPoints;
     }
 
-    public void setWitchcraftPoints(byte witchcraftPoints) {
-        this.witchcraftPoints = witchcraftPoints;
-    }
-
     public byte getTransgressionDistance() {
         return transgressionDistance;
     }
 
-    public void setTransgressionDistance(byte transgressionDistance) {
-        this.transgressionDistance = transgressionDistance;
-    }
+
+
 
 
     //    Студентам каждого из этих факультетов присущи свои свойства характера. Эти свойства оцениваются в целочисленном эквиваленте от 0 до 100. +++
