@@ -3,14 +3,12 @@ package Hogwarts;
 public class Hogwarts {
     private String name;
     private String surname;
-    private String facultyName;
     private byte witchcraftPoints;
     private byte transgressionDistance;
 
-    public Hogwarts(String name, String surname, String facultyName, byte witchcraftPoints, byte transgressionDistance) {
+    public Hogwarts(String name, String surname, byte witchcraftPoints, byte transgressionDistance) {
         this.name = name;
         this.surname = surname;
-        this.facultyName = facultyName;
         this.witchcraftPoints = witchcraftPoints;
         this.transgressionDistance = transgressionDistance;
     }
@@ -22,10 +20,6 @@ public class Hogwarts {
         return surname;
     }
 
-    public String getFacultyName() {
-        return facultyName;
-    }
-
     public byte getWitchcraftPoints() {
         return witchcraftPoints;
     }
@@ -34,11 +28,15 @@ public class Hogwarts {
         return transgressionDistance;
     }
 
+    public void setWitchcraftPoints(byte witchcraftPoints) {
+        this.witchcraftPoints = witchcraftPoints;
+    }
 
+    public void setTransgressionDistance(byte transgressionDistance) {
+        this.transgressionDistance = transgressionDistance;
+    }
 
-
-
-    //    Студентам каждого из этих факультетов присущи свои свойства характера. Эти свойства оцениваются в целочисленном эквиваленте от 0 до 100. +++
+//    Студентам каждого из этих факультетов присущи свои свойства характера. Эти свойства оцениваются в целочисленном эквиваленте от 0 до 100. +++
 //
 //Всем Гриффиндорцам присущи благородство, честь и храбрость.
 //
